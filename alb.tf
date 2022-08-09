@@ -5,7 +5,7 @@ resource "aws_lb" "load_balancer" {
   security_groups    = [aws_security_group.challenge.id]
   subnets            = [aws_subnet.public_1.id,aws_subnet.public_2.id]
 
-  enable_deletion_protection = true
+  enable_deletion_protection = false
     tags = {
     Environment = "elb-example"
   }
