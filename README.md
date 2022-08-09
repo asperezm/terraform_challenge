@@ -29,5 +29,7 @@ Run `terraform destroy` when you don't need these resources.
 ```bash
 alb-597928146.us-east-1.elb.amazonaws.com
 ```
+### First instance
 ![screen1](https://user-images.githubusercontent.com/47333056/183780744-3465b0d7-d0cc-4659-8535-8a046f0ad148.png)
+### Second instance
 ![screen2](https://user-images.githubusercontent.com/47333056/183780769-f929cc6e-da0e-421a-9989-69136194e1d1.png)
