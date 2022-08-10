@@ -23,6 +23,8 @@ $ terraform init
 $ terraform plan
 $ terraform apply
 ```
+And these are the results of the commands, where we can see the url of the load balancer
+![Screenshot_3](https://user-images.githubusercontent.com/47333056/183782145-f9cc8fa7-43e4-4a44-9ee3-73903e55dd95.png)
 Run `terraform destroy` when you don't need these resources.
 
 ## Operation
