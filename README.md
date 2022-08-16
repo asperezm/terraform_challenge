@@ -24,14 +24,14 @@ $ terraform plan
 $ terraform apply
 ```
 And these are the results of the commands, where we can see the url of the load balancer
-![Screenshot_3](https://user-images.githubusercontent.com/47333056/183782145-f9cc8fa7-43e4-4a44-9ee3-73903e55dd95.png)
+![dns_name](https://user-images.githubusercontent.com/47333056/184996040-341a5ab2-a99f-4d7f-ac7a-86dedcda7ea9.png)
 Run `terraform destroy` when you don't need these resources.
 
 ## Operation
 ```bash
-alb-597928146.us-east-1.elb.amazonaws.com
+http://nlb-5f18399106418f1e.elb.us-east-1.amazonaws.com/
 ```
 ### First instance
-![screen1](https://user-images.githubusercontent.com/47333056/183780744-3465b0d7-d0cc-4659-8535-8a046f0ad148.png)
+![first](https://user-images.githubusercontent.com/47333056/184996128-36b622f3-420d-40e2-a82e-7122510f716c.png)
 ### Second instance
-![screen2](https://user-images.githubusercontent.com/47333056/183780769-f929cc6e-da0e-421a-9989-69136194e1d1.png)
+![second](https://user-images.githubusercontent.com/47333056/184996156-b18efecc-807e-41d3-a25b-2740ead72d12.png)
