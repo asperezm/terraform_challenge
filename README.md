@@ -24,14 +24,25 @@ $ terraform plan
 $ terraform apply
 ```
 And these are the results of the commands, where we can see the url of the load balancer
-![dns_name](https://user-images.githubusercontent.com/47333056/184996040-341a5ab2-a99f-4d7f-ac7a-86dedcda7ea9.png)
+![loadbalancer](https://user-images.githubusercontent.com/47333056/185229497-81462216-7326-476c-9abd-6518b6d872db.png)
 Run `terraform destroy` when you don't need these resources.
 
 ## Operation
 ```bash
-http://nlb-5f18399106418f1e.elb.us-east-1.amazonaws.com/
+http://nlb-5e7a95ea4fdbd752.elb.us-east-1.amazonaws.com/
 ```
 ### First instance
-![first](https://user-images.githubusercontent.com/47333056/184996128-36b622f3-420d-40e2-a82e-7122510f716c.png)
+![server1](https://user-images.githubusercontent.com/47333056/185229571-c0778f8e-5f64-438c-856f-264006e33d12.png)
 ### Second instance
-![second](https://user-images.githubusercontent.com/47333056/184996156-b18efecc-807e-41d3-a25b-2740ead72d12.png)
+![server2](https://user-images.githubusercontent.com/47333056/185229616-0ddf340f-1273-42aa-8b1a-a1175621733a.png)
+
+## Script check
+The following script we can check the operation of the load balancer and that the load is distributed in 2 instances
+```bash
+#!/bin/bash
+while [ true ]
+do
+curl -H 'Cache-Control: no-cache' <NLB_URL>
+done
+```
+![script](https://user-images.githubusercontent.com/47333056/185230194-7a3ab4a9-fa1f-407a-8db1-2ef138b92fdf.png)
