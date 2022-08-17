@@ -5,6 +5,7 @@ resource "aws_lb" "load_balancer" {
   subnets            = [aws_subnet.public_1.id,aws_subnet.public_2.id]
 
   enable_deletion_protection = false
+  enable_cross_zone_load_balancing = true
     tags = {
     Environment = "elb-example"
   }
